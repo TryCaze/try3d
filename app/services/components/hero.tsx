@@ -1,12 +1,16 @@
+import Image from "next/image";
+
 const Hero = () => {
   return (
     <section className="body-font bg-gray-900 text-gray-400">
       <div className="container mx-auto flex flex-col items-center px-5 py-24 md:flex-row">
         <div className="mb-10 w-5/6 md:mb-0 md:w-1/2 lg:w-full lg:max-w-lg">
-          <img
+          <Image
             className="rounded object-cover object-center"
             alt="hero"
             src="https://dummyimage.com/720x600"
+            width={240}
+            height={240}
           />
         </div>
         <div className="flex flex-col items-center text-center md:w-1/2 md:items-start md:pl-16 md:text-left lg:flex-grow lg:pl-24">

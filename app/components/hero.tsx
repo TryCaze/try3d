@@ -42,10 +42,12 @@ const Hero = () => {
               </div>
               <div className="block w-full  lg:col-span-6 xl:col-span-7">
                 <div className="w-full  sm:w-auto lg:w-[60.8125rem] xl:ml-16">
-                  <img
+                  <Image
                     src="https://pagedone.io/asset/uploads/1694846193.png"
                     alt="Dashboard image"
                     className="rounded-l-3xl object-cover"
+                    width={240}
+                    height={240}
                   />
                 </div>
               </div>

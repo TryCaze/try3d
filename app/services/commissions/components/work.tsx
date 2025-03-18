@@ -1,3 +1,5 @@
+import Image from "next/image";
+
 const Work = () => {
   return (
     <section className="body-font bg-gray-900 text-gray-400">
@@ -140,10 +142,12 @@ const Work = () => {
               </div>
             </div>
           </div>
-          <img
+          <Image
             className="mt-12 rounded-lg object-cover object-center md:mt-0 md:w-1/2 lg:w-3/5"
             src="https://dummyimage.com/1200x500"
             alt="step"
+            width={240}
+            height={240}
           />
         </div>
       </div>

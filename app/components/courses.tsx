@@ -1,4 +1,5 @@
 import { ArrowBigRight } from "lucide-react";
+import Image from "next/image";
 
 const Courses = () => {
   return (
@@ -26,7 +27,7 @@ const Courses = () => {
             </a>
           </div>
         </div>
-        <img src="courses.svg" alt="courses" />
+        <Image width={240} height={240} src="courses.svg" alt="courses" />
       </div>
     </section>
   );

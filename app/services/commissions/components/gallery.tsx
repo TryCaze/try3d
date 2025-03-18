@@ -17,6 +17,8 @@ const Gallery = () => {
           <div className="flex w-1/2 flex-wrap">
             <div className="w-1/2 p-1 md:p-2">
               <Image
+                width={240}
+                height={240}
                 alt="gallery"
                 className="block h-full w-full object-cover object-center"
                 src="https://dummyimage.com/500x300"
@@ -24,6 +26,8 @@ const Gallery = () => {
             </div>
             <div className="w-1/2 p-1 md:p-2">
               <Image
+                width={240}
+                height={240}
                 alt="gallery"
                 className="block h-full w-full object-cover object-center"
                 src="https://dummyimage.com/501x301"
@@ -31,6 +35,8 @@ const Gallery = () => {
             </div>
             <div className="w-full p-1 md:p-2">
               <Image
+                width={240}
+                height={240}
                 alt="gallery"
                 className="block h-full w-full object-cover object-center"
                 src="https://dummyimage.com/600x360"
@@ -40,6 +46,8 @@ const Gallery = () => {
           <div className="flex w-1/2 flex-wrap">
             <div className="w-full p-1 md:p-2">
               <Image
+                width={240}
+                height={240}
                 alt="gallery"
                 className="block h-full w-full object-cover object-center"
                 src="https://dummyimage.com/601x361"
@@ -47,6 +55,8 @@ const Gallery = () => {
             </div>
             <div className="w-1/2 p-1 md:p-2">
               <Image
+                width={240}
+                height={240}
                 alt="gallery"
                 className="block h-full w-full object-cover object-center"
                 src="https://dummyimage.com/502x302"
@@ -54,6 +64,8 @@ const Gallery = () => {
             </div>
             <div className="w-1/2 p-1 md:p-2">
               <Image
+                width={240}
+                height={240}
                 alt="gallery"
                 className="block h-full w-full object-cover object-center"
                 src="https://dummyimage.com/503x303"

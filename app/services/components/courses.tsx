@@ -1,12 +1,16 @@
+import Image from "next/image";
+
 const Courses = () => {
   return (
     <section className="body-font bg-gray-900 text-gray-400">
       <div className="container mx-auto flex flex-wrap px-5 py-24">
         <div className="mb-10 w-full overflow-hidden rounded-lg lg:mb-0 lg:w-1/2">
-          <img
+          <Image
             alt="feature"
             className="h-full w-full object-cover object-center"
             src="https://dummyimage.com/460x500"
+            width={240}
+            height={240}
           />
         </div>
         <div className="-mb-10 flex flex-col flex-wrap text-center lg:w-1/2 lg:py-6 lg:pl-12 lg:text-left">

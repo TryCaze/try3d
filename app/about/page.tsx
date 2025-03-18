@@ -1,4 +1,5 @@
 import { ChevronRight } from "lucide-react";
+import Image from "next/image";
 
 const About = () => {
   return (
@@ -26,7 +27,9 @@ const About = () => {
               </a>
             </div>
             <div className="md:w-1/2">
-              <img
+              <Image
+                width={240}
+                height={240}
                 src="/lecture.jpg"
                 alt="Conference"
                 className="h-auto w-full rounded-lg shadow-lg"

@@ -3,6 +3,7 @@
 import { ChevronDown, TableOfContents } from "lucide-react";
 import { useState } from "react";
 import { motion, AnimatePresence } from "framer-motion";
+import Image from "next/image";
 
 const Header: React.FC = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -22,7 +23,13 @@ const Header: React.FC = () => {
       <div className="container mx-auto flex items-center justify-between px-6 py-4">
         {/* Logo */}
         <div className="flex items-center text-xl font-bold">
-          <img src="/logo.png" alt="Logo" className="mr-2 h-8 w-20" />
+          <Image
+            width={32}
+            height={32}
+            src="/logo.png"
+            alt="Logo"
+            className="mr-2 h-8 w-20"
+          />
           <span>Try3D</span>
         </div>
 

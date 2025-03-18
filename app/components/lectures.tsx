@@ -1,10 +1,11 @@
 import { ArrowBigRight } from "lucide-react";
+import Image from "next/image";
 
 const Lectures = () => {
   return (
     <section className="bg-white dark:bg-gray-900">
       <div className="mx-auto max-w-screen-xl items-center gap-8 px-4 py-8 sm:py-16 md:grid md:grid-cols-2 lg:px-6 xl:gap-16">
-        <img src="lectures.svg" alt="lectures" />
+        <Image width={240} height={240} src="lectures.svg" alt="lectures" />
         <div className="mt-4 md:mt-0">
           <h2 className="mb-4 text-4xl font-extrabold tracking-tight text-gray-900 dark:text-white">
             Predavanja

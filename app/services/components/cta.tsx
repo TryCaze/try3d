@@ -7,10 +7,7 @@ const CTA = () => {
             Let's find more that brings us together.
           </h2>
           <p className="mb-8 font-light text-gray-500 dark:text-gray-400 sm:text-xl">
-            Flowbite helps you connect with friends, family and communities of
-            people who share your interests. Connecting with your friends and
-            family as well as discovering new ones is easy with features like
-            Groups, Watch and Marketplace.
+            AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
           </p>
           <div className="flex flex-col space-y-4 sm:flex-row sm:space-x-4 sm:space-y-0">
             <a

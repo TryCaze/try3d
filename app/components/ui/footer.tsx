@@ -1,4 +1,5 @@
 import { Facebook, Github, Instagram, Youtube } from "lucide-react";
+import Image from "next/image";
 
 const Footer = () => {
   return (
@@ -7,7 +8,13 @@ const Footer = () => {
         <div className="md:flex md:justify-between">
           <div className="mb-6 md:mb-0">
             <a href="https://flowbite.com" className="flex items-center">
-              <img src="/logo.png" className="mr-3 h-8" alt="FlowBite Logo" />
+              <Image
+                width={32}
+                height={32}
+                src="/logo.png"
+                className="mr-3 h-8"
+                alt="Try3D Logo"
+              />
               <span className="self-center whitespace-nowrap text-2xl font-semibold dark:text-white">
                 Try3D
               </span>
@@ -25,7 +32,10 @@ const Footer = () => {
                   </a>
                 </li>
                 <li>
-                  <a href="https://trycaze-website.vercel.app/hr" className="hover:underline">
+                  <a
+                    href="https://trycaze-website.vercel.app/hr"
+                    className="hover:underline"
+                  >
                     TryCaze
                   </a>
                 </li>
@@ -37,12 +47,18 @@ const Footer = () => {
               </h2>
               <ul className="text-gray-600 dark:text-gray-400">
                 <li className="mb-4">
-                  <a href="https://bsky.app/profile/did:plc:ortwnym66v3s7gzkl4gritxf" className="hover:underline ">
+                  <a
+                    href="https://bsky.app/profile/did:plc:ortwnym66v3s7gzkl4gritxf"
+                    className="hover:underline "
+                  >
                     Bluesky
                   </a>
                 </li>
                 <li>
-                  <a href="https://www.instagram.com/trycaze/" className="hover:underline">
+                  <a
+                    href="https://www.instagram.com/trycaze/"
+                    className="hover:underline"
+                  >
                     Instagram
                   </a>
                 </li>

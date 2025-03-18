@@ -1,4 +1,5 @@
 import { ArrowBigRight } from "lucide-react";
+import Image from "next/image";
 
 const Commisions = () => {
   return (
@@ -27,7 +28,7 @@ const Commisions = () => {
             </a>
           </div>
         </div>
-        <img src="commisions.svg" alt="commisions" />
+        <Image width={240} height={240} src="commisions.svg" alt="commisions" />
       </div>
     </section>
   );
