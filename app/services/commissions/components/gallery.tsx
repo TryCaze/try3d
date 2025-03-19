@@ -17,58 +17,58 @@ const Gallery = () => {
           <div className="flex w-1/2 flex-wrap">
             <div className="w-1/2 p-1 md:p-2">
               <Image
-                width={240}
-                height={240}
+                width={500}
+                height={300}
                 alt="gallery"
                 className="block h-full w-full object-cover object-center"
-                src="https://dummyimage.com/500x300"
+                src="/background.jpeg"
               />
             </div>
             <div className="w-1/2 p-1 md:p-2">
               <Image
-                width={240}
-                height={240}
+                width={501}
+                height={301}
                 alt="gallery"
                 className="block h-full w-full object-cover object-center"
-                src="https://dummyimage.com/501x301"
+                src="/background.jpeg"
               />
             </div>
             <div className="w-full p-1 md:p-2">
               <Image
-                width={240}
-                height={240}
+                width={600}
+                height={360}
                 alt="gallery"
                 className="block h-full w-full object-cover object-center"
-                src="https://dummyimage.com/600x360"
+                src="/background.jpeg"
               />
             </div>
           </div>
           <div className="flex w-1/2 flex-wrap">
             <div className="w-full p-1 md:p-2">
               <Image
-                width={240}
-                height={240}
+                width={601}
+                height={361}
                 alt="gallery"
                 className="block h-full w-full object-cover object-center"
-                src="https://dummyimage.com/601x361"
+                src="/background.jpeg"
               />
             </div>
             <div className="w-1/2 p-1 md:p-2">
               <Image
-                width={240}
-                height={240}
+                width={502}
+                height={302}
                 alt="gallery"
                 className="block h-full w-full object-cover object-center"
-                src="https://dummyimage.com/502x302"
+                src="/background.jpeg"
               />
             </div>
             <div className="w-1/2 p-1 md:p-2">
               <Image
-                width={240}
-                height={240}
+                width={503}
+                height={303}
                 alt="gallery"
                 className="block h-full w-full object-cover object-center"
-                src="https://dummyimage.com/503x303"
+                src="/background.jpeg"
               />
             </div>
           </div>

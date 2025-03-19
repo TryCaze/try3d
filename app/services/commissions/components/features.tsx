@@ -9,9 +9,9 @@ const Features = () => {
           <Image
             alt="feature"
             className="h-full w-full object-cover object-center"
-            src="https://dummyimage.com/460x500"
-            width={240}
-            height={240}
+            src="/background.jpeg"
+            width={460}
+            height={500}
           />
         </div>
         <div className="-mb-10 flex flex-col flex-wrap text-center lg:w-1/2 lg:py-6 lg:pl-12 lg:text-left">

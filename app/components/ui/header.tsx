@@ -24,7 +24,7 @@ const Header: React.FC = () => {
         {/* Logo */}
         <div className="flex items-center text-xl font-bold">
           <Image
-            width={32}
+            width={80}
             height={32}
             src="/logo.png"
             alt="Logo"

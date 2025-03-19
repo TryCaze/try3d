@@ -5,7 +5,7 @@ const Shop = () => {
     <section className="mt-10 bg-white dark:bg-gray-900">
       <div className="mx-auto max-w-screen-xl px-4 py-8 lg:px-6 lg:py-16">
         <div className="mx-auto max-w-screen-sm text-center">
-          <Image src="shop404.svg" alt="404" width={240} height={240} />
+          <Image src="shop404.svg" alt="404" width={1200} height={500} />
           <p className="mb-4 text-3xl font-bold tracking-tight text-gray-900 dark:text-white md:text-4xl">
             Oops!
           </p>

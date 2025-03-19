@@ -46,8 +46,8 @@ const Hero = () => {
                     src="https://pagedone.io/asset/uploads/1694846193.png"
                     alt="Dashboard image"
                     className="rounded-l-3xl object-cover"
-                    width={240}
-                    height={240}
+                    width={720}
+                    height={500}
                   />
                 </div>
               </div>

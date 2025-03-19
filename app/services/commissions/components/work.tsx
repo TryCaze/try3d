@@ -144,10 +144,10 @@ const Work = () => {
           </div>
           <Image
             className="mt-12 rounded-lg object-cover object-center md:mt-0 md:w-1/2 lg:w-3/5"
-            src="https://dummyimage.com/1200x500"
+            src="/background.jpeg"
             alt="step"
-            width={240}
-            height={240}
+            width={1200}
+            height={500}
           />
         </div>
       </div>

@@ -28,8 +28,8 @@ const About = () => {
             </div>
             <div className="md:w-1/2">
               <Image
-                width={240}
-                height={240}
+                width={720}
+                height={500}
                 src="/lecture.jpg"
                 alt="Conference"
                 className="h-auto w-full rounded-lg shadow-lg"
