@@ -2,7 +2,7 @@ import Image from "next/image";
 
 const Shop = () => {
   return (
-    <section className="mt-10 bg-white dark:bg-gray-900">
+    <section className="mt-10 bg-gray-900">
       <div className="mx-auto max-w-screen-xl px-4 py-8 lg:px-6 lg:py-16">
         <div className="mx-auto max-w-screen-sm text-center">
           <Image src="shop404.svg" alt="404" width={1200} height={500} />

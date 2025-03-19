@@ -4,7 +4,7 @@ import Image from "next/image";
 const Hero = () => {
   return (
     <>
-      <section className="h-full pt-0  lg:pl-8 lg:pt-20">
+      <section className="h-full bg-gray-900  pt-0 lg:pl-8 lg:pt-20">
         <div className="m-5 overflow-hidden rounded-2xl bg-slate-800 py-10 lg:m-0 lg:rounded-bl-2xl lg:rounded-tl-2xl  xl:py-8 2xl:py-16 ">
           <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
             <div className="lg:gap32 grid grid-cols-1 items-center gap-14 lg:grid-cols-12">

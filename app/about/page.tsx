@@ -3,8 +3,8 @@ import Image from "next/image";
 
 const About = () => {
   return (
-    <section>
-      <div className="my-10 text-gray-700 dark:text-white">
+    <section className="bg-slate-900">
+      <div className="my-10 text-white">
         <div className="container mx-auto px-4 py-16">
           <div className="flex flex-col items-center justify-between md:flex-row">
             <div className="mb-8 md:mb-0 md:w-1/2">
