@@ -4,7 +4,7 @@ const CTA = () => {
       <div className="mx-auto max-w-screen-xl px-4 py-8 sm:py-16 lg:px-6">
         <div className="max-w-screen-md">
           <h2 className="mb-4 text-4xl font-extrabold tracking-tight text-gray-900 dark:text-white">
-            Let's find more that brings us together.
+            Lets find more that brings us together.
           </h2>
           <p className="mb-8 font-light text-gray-500 dark:text-gray-400 sm:text-xl">
             AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA

@@ -35,7 +35,7 @@ const Services = () => {
                 Izrada po narudžbi
               </h2>
               <p className="text-lg leading-relaxed">
-                Personalizirani 3D ispis – od ideje do stvarnosti.
+                Personalizirani 3D ispis od ideje do stvarnosti.
               </p>
               <a
                 href="/services/commissions"
