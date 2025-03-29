@@ -1,27 +1,45 @@
-import Image from "next/image";
+// app/shop/page.tsx
+import { products, categories } from "@/data/products";
+import ProductCard from "./components/ProductCard";
+import { Metadata } from "next";
+import Hero from "./components/hero";
 
-const Shop = () => {
-  return (
-    <section className="mt-10 bg-gray-900">
-      <div className="mx-auto max-w-screen-xl px-4 py-8 lg:px-6 lg:py-16">
-        <div className="mx-auto max-w-screen-sm text-center">
-          <Image src="shop404.svg" alt="404" width={1200} height={500} />
-          <p className="mb-4 text-3xl font-bold tracking-tight text-gray-900 dark:text-white md:text-4xl">
-            Oops!
-          </p>
-          <p className="mb-4 text-lg font-light text-gray-500 dark:text-gray-400">
-            Shop je još uvijek u izradi, vratite se poslje.{" "}
-          </p>
-          <a
-            href="/"
-            className="bg-primary-600 hover:bg-primary-800 focus:ring-primary-300 dark:focus:ring-primary-900 my-4 inline-flex rounded-lg px-5 py-2.5 text-center text-sm font-medium text-gray-400 focus:outline-none focus:ring-4 dark:text-white"
-          >
-            Vratite se na početnu stranicu
-          </a>
-        </div>
-      </div>
-    </section>
-  );
+export const metadata: Metadata = {
+  title: "Shop | My Awesome Store",
+  description:
+    "Browse our amazing collection of products. Find the best deals on quality items.",
+  keywords: "shop, products, buy, online store, ecommerce",
+  openGraph: {
+    title: "Our Product Collection",
+    description: "Browse our amazing collection of products",
+    type: "website",
+  },
 };
 
-export default Shop;
+export default function ShopPage() {
+  return (
+    <div className="container mx-auto bg-slate-900 px-4 py-8">
+      <Hero />
+      <div className="mb-8">
+        <h2 className="mb-4 text-2xl font-semibold text-white">Categories</h2>
+        <div className="flex flex-wrap gap-2">
+          {categories.map((category) => (
+            <a
+              key={category.id}
+              href={`/shop/categories/${category.id}`}
+              className="rounded-full bg-gray-200 px-4 py-2 hover:bg-gray-300"
+            >
+              {category.name}
+            </a>
+          ))}
+        </div>
+      </div>
+
+      <div className="grid grid-cols-1 gap-6 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4">
+        {products.map((product) => (
+          <ProductCard key={product.id} product={product} />
+        ))}
+      </div>
+    </div>
+  );
+}

@@ -4,6 +4,7 @@ import { ChevronDown, TableOfContents } from "lucide-react";
 import { useState } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import Image from "next/image";
+import CartButton from "../CartButton";
 
 const Header: React.FC = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -93,9 +94,10 @@ const Header: React.FC = () => {
           <a href="/shop" className="hover:text-gray-300">
             Shop
           </a>
-          <a href="/contact" className="hover:text-gray-300">
+          <a href="mailto:trycaze@proton.me" className="hover:text-gray-300">
             Kontakt
           </a>
+          <CartButton />
         </nav>
 
         {/* Mobile Menu Button */}
@@ -128,7 +130,10 @@ const Header: React.FC = () => {
             <a href="/shop" className="block px-4 py-2 hover:bg-gray-700">
               Shop
             </a>
-            <a href="/contact" className="block px-4 py-2 hover:bg-gray-700">
+            <a
+              href="mailto:trycaze@gmail.com"
+              className="block px-4 py-2 hover:bg-gray-700"
+            >
               Kontakt
             </a>
           </motion.div>

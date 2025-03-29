@@ -1,4 +1,12 @@
+import {
+  BrushIcon,
+  CircleCheckBigIcon,
+  ImageUpscaleIcon,
+  MonitorCogIcon,
+  MousePointerClickIcon,
+} from "lucide-react";
 import Image from "next/image";
+import Link from "next/link";
 
 const Work = () => {
   return (
@@ -10,26 +18,23 @@ const Work = () => {
               <div className="absolute inset-0 flex h-full w-10 items-center justify-center">
                 <div className="pointer-events-none h-full w-1 bg-gray-800"></div>
               </div>
-              <div className="relative z-10 inline-flex h-10 w-10 flex-shrink-0 items-center justify-center rounded-full bg-indigo-500 text-white">
-                <svg
-                  fill="none"
-                  stroke="currentColor"
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
-                  stroke-width="2"
-                  className="h-5 w-5"
-                  viewBox="0 0 24 24"
-                >
-                  <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"></path>
-                </svg>
+              <div className="relative z-10 inline-flex size-10 shrink-0 items-center justify-center rounded-full bg-indigo-500 text-white">
+                <MousePointerClickIcon />
               </div>
-              <div className="flex-grow pl-4">
+              <div className="grow pl-4">
                 <h2 className="title-font mb-1 text-sm font-medium tracking-wider text-white">
                   KORAK 1
                 </h2>
+                <h3 className="subtitle-font mb-1 text-xs font-light tracking-wider text-gray-300">
+                  Odabir modela
+                </h3>
                 <p className="leading-relaxed">
-                  VHS cornhole pop-up, try-hard 8-bit iceland helvetica. Kinfolk
-                  bespoke try-hard cliche palo santo offal.
+                  Možete odabrati jedan od postojećih modela ili nam poslati
+                  svoj dizajn. Ukoliko nemate dizajn, pomoći će mo vam da ga
+                  kreirate. Gotove dizajne možete pronaći{" "}
+                  <Link className="underline" href="/guide">
+                    ovdje.
+                  </Link>
                 </p>
               </div>
             </div>
@@ -37,26 +42,20 @@ const Work = () => {
               <div className="absolute inset-0 flex h-full w-10 items-center justify-center">
                 <div className="pointer-events-none h-full w-1 bg-gray-800"></div>
               </div>
-              <div className="relative z-10 inline-flex h-10 w-10 flex-shrink-0 items-center justify-center rounded-full bg-indigo-500 text-white">
-                <svg
-                  fill="none"
-                  stroke="currentColor"
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
-                  stroke-width="2"
-                  className="h-5 w-5"
-                  viewBox="0 0 24 24"
-                >
-                  <path d="M22 12h-4l-3 9L9 3l-3 9H2"></path>
-                </svg>
+              <div className="relative z-10 inline-flex size-10 shrink-0 items-center justify-center rounded-full bg-indigo-500 text-white">
+                <ImageUpscaleIcon />
               </div>
-              <div className="flex-grow pl-4">
+              <div className="grow pl-4">
                 <h2 className="title-font mb-1 text-sm font-medium tracking-wider text-white">
                   KORAK 2
                 </h2>
+                <h3 className="subtitle-font mb-1 text-xs font-light tracking-wider text-gray-300">
+                  Prilagodba i optimizacija
+                </h3>
                 <p className="leading-relaxed">
-                  Vice migas literally kitsch +1 pok pok. Truffaut hot chicken
-                  slow-carb health goth, vape typewriter.
+                  Nakon odabira modela, prilagođavamo ga prema vašim željama i
+                  potrebama. Ukoliko je potrebno, optimiziramo dizajn kako bi
+                  bio prikladan za izradu.
                 </p>
               </div>
             </div>
@@ -64,27 +63,20 @@ const Work = () => {
               <div className="absolute inset-0 flex h-full w-10 items-center justify-center">
                 <div className="pointer-events-none h-full w-1 bg-gray-800"></div>
               </div>
-              <div className="relative z-10 inline-flex h-10 w-10 flex-shrink-0 items-center justify-center rounded-full bg-indigo-500 text-white">
-                <svg
-                  fill="none"
-                  stroke="currentColor"
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
-                  stroke-width="2"
-                  className="h-5 w-5"
-                  viewBox="0 0 24 24"
-                >
-                  <circle cx="12" cy="5" r="3"></circle>
-                  <path d="M12 22V8M5 12H2a10 10 0 0020 0h-3"></path>
-                </svg>
+              <div className="relative z-10 inline-flex size-10 shrink-0 items-center justify-center rounded-full bg-indigo-500 text-white">
+                <MonitorCogIcon />
               </div>
-              <div className="flex-grow pl-4">
+              <div className="grow pl-4">
                 <h2 className="title-font mb-1 text-sm font-medium tracking-wider text-white">
                   KORAK 3
                 </h2>
+                <h3 className="subtitle-font mb-1 text-xs font-light tracking-wider text-gray-300">
+                  Izrada
+                </h3>
                 <p className="leading-relaxed">
-                  Coloring book nar whal glossier master cleanse umami. Salvia
-                  +1 master cleanse blog taiyaki.
+                  Nakon prilagodbe i optimizacije, pristupamo izradi vašeg
+                  proizvoda. Koristimo najkvalitetnije materijale i tehnologije
+                  kako bi vaš proizvod bio vrhunske kvalitete.
                 </p>
               </div>
             </div>
@@ -92,59 +84,43 @@ const Work = () => {
               <div className="absolute inset-0 flex h-full w-10 items-center justify-center">
                 <div className="pointer-events-none h-full w-1 bg-gray-800"></div>
               </div>
-              <div className="relative z-10 inline-flex h-10 w-10 flex-shrink-0 items-center justify-center rounded-full bg-indigo-500 text-white">
-                <svg
-                  fill="none"
-                  stroke="currentColor"
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
-                  stroke-width="2"
-                  className="h-5 w-5"
-                  viewBox="0 0 24 24"
-                >
-                  <path d="M20 21v-2a4 4 0 00-4-4H8a4 4 0 00-4 4v2"></path>
-                  <circle cx="12" cy="7" r="4"></circle>
-                </svg>
+              <div className="relative z-10 inline-flex size-10 shrink-0 items-center justify-center rounded-full bg-indigo-500 text-white">
+                <BrushIcon />
               </div>
-              <div className="flex-grow pl-4">
+              <div className="grow pl-4">
                 <h2 className="title-font mb-1 text-sm font-medium tracking-wider text-white">
                   KORAK 4
                 </h2>
+                <h3 className="subtitle-font mb-1 text-xs font-light tracking-wider text-gray-300">
+                  Obrada i dorada
+                </h3>
                 <p className="leading-relaxed">
-                  VHS cornhole pop-up, try-hard 8-bit iceland helvetica. Kinfolk
-                  bespoke try-hard cliche palo santo offal.
+                  Nakon izrade proizvoda, pristupamo obradi i doradi. Ukoliko je
+                  potrebno, proizvod se dodatno obrađuje kako bi bio savršen.
                 </p>
               </div>
             </div>
             <div className="relative flex">
-              <div className="relative z-10 inline-flex h-10 w-10 flex-shrink-0 items-center justify-center rounded-full bg-indigo-500 text-white">
-                <svg
-                  fill="none"
-                  stroke="currentColor"
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
-                  stroke-width="2"
-                  className="h-5 w-5"
-                  viewBox="0 0 24 24"
-                >
-                  <path d="M22 11.08V12a10 10 0 11-5.93-9.14"></path>
-                  <path d="M22 4L12 14.01l-3-3"></path>
-                </svg>
+              <div className="relative z-10 inline-flex size-10 shrink-0 items-center justify-center rounded-full bg-indigo-500 text-white">
+                <CircleCheckBigIcon />
               </div>
-              <div className="flex-grow pl-4">
+              <div className="grow pl-4">
                 <h2 className="title-font mb-1 text-sm font-medium tracking-wider text-white">
                   ZAVRŠENI PRODUKT
                 </h2>
+                <h3 className="subtitle-font mb-1 text-xs font-light tracking-wider text-gray-300">
+                  Dostava
+                </h3>
                 <p className="leading-relaxed">
-                  Pitchfork ugh tattooed scenester echo park gastropub whatever
-                  cold-pressed retro.
+                  Nakon obrade i dorade, proizvod je spreman za dostavu ili ga
+                  možete preuzeti osobno.
                 </p>
               </div>
             </div>
           </div>
           <Image
             className="mt-12 rounded-lg object-cover object-center md:mt-0 md:w-1/2 lg:w-3/5"
-            src="/background.jpeg"
+            src="/posters/hexshelf.png"
             alt="step"
             width={1200}
             height={500}

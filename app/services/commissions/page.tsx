@@ -10,7 +10,6 @@ const Commisions = () => {
       <Hero />
       <Features />
       <Work />
-      <Gallery />
       <CTA />
     </>
   );

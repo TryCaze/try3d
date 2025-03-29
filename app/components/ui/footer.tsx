@@ -15,17 +15,17 @@ const Footer = () => {
                 className="mr-3 h-8"
                 alt="Try3D Logo"
               />
-              <span className="self-center whitespace-nowrap text-2xl font-semibold dark:text-white">
+              <span className="self-center whitespace-nowrap text-2xl font-semibold text-white">
                 Try3D
               </span>
             </a>
           </div>
           <div className="grid grid-cols-2 gap-8 sm:grid-cols-3 sm:gap-6">
             <div>
-              <h2 className="mb-6 text-sm font-semibold uppercase text-gray-900 dark:text-white">
+              <h2 className="mb-6 text-sm font-semibold uppercase text-white">
                 Resursi
               </h2>
-              <ul className="text-gray-600 dark:text-gray-400">
+              <ul className="text-gray-400">
                 <li className="mb-4">
                   <a href="#" className="hover:underline">
                     Try
@@ -42,10 +42,10 @@ const Footer = () => {
               </ul>
             </div>
             <div>
-              <h2 className="mb-6 text-sm font-semibold uppercase text-gray-900 dark:text-white">
+              <h2 className="mb-6 text-sm font-semibold uppercase text-white">
                 Pratite nas na
               </h2>
-              <ul className="text-gray-600 dark:text-gray-400">
+              <ul className="text-gray-400">
                 <li className="mb-4">
                   <a
                     href="https://bsky.app/profile/did:plc:ortwnym66v3s7gzkl4gritxf"
@@ -65,10 +65,10 @@ const Footer = () => {
               </ul>
             </div>
             <div>
-              <h2 className="mb-6 text-sm font-semibold uppercase text-gray-900 dark:text-white">
+              <h2 className="mb-6 text-sm font-semibold uppercase text-white">
                 Dodatno
               </h2>
-              <ul className="text-gray-600 dark:text-gray-400">
+              <ul className="text-gray-400">
                 <li className="mb-4">
                   <a href="/about" className="hover:underline">
                     O nama
@@ -85,7 +85,7 @@ const Footer = () => {
         </div>
         <hr className="my-6 border-gray-200 dark:border-gray-700 sm:mx-auto lg:my-8" />
         <div className="sm:flex sm:items-center sm:justify-between">
-          <span className="text-sm text-gray-500 dark:text-gray-400 sm:text-center">
+          <span className="text-sm text-gray-400 sm:text-center">
             © 2025{" "}
             <a href="/" className="hover:underline">
               Try3D™
@@ -95,19 +95,19 @@ const Footer = () => {
           <div className="mt-4 flex space-x-6 sm:mt-0 sm:justify-center">
             <a
               href="https://www.instagram.com/trycaze/"
-              className="text-gray-500 hover:text-gray-900 dark:hover:text-white"
+              className="text-gray-500 hover:text-white"
             >
               <Instagram />
             </a>
             <a
               href="https://github.com/TryCaze"
-              className="text-gray-500 hover:text-gray-900 dark:hover:text-white"
+              className="text-gray-500 hover:text-white"
             >
               <Github />
             </a>
             <a
               href="https://www.youtube.com/@TryCaze"
-              className="text-gray-500 hover:text-gray-900 dark:hover:text-white"
+              className="text-gray-500 hover:text-white"
             >
               <Youtube />
             </a>

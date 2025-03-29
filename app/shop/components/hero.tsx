@@ -31,13 +31,6 @@ const Hero = () => {
                     Istražite ponude
                     <ArrowRightIcon className="transition-transform duration-300 ease-in-out group-hover:translate-y-[-3px]" />
                   </a>
-                  <a
-                    href="mailto:trycaze@proton.me"
-                    className="group relative ml-4 inline-flex items-center gap-2 rounded-lg border-0 bg-gray-800 px-6 py-2 text-lg text-gray-400 shadow-lg transition-all duration-300 hover:scale-105 hover:bg-gray-700 hover:text-white focus:outline-none"
-                  >
-                    Javite nam se
-                    <SendIcon className="transition-transform duration-300 ease-in-out group-hover:rotate-45" />
-                  </a>
                 </div>
               </div>
               <div className="block w-full  lg:col-span-6 xl:col-span-7">
