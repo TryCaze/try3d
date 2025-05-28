@@ -77,9 +77,12 @@ export default function CartPage() {
                 ({totalItems} artikala)
               </span>
             </button>
-            <button className="mt-4 w-full rounded-md bg-blue-600 py-2 text-white hover:bg-blue-700">
+            <a
+              href="/order"
+              className="mt-4 flex w-full justify-center rounded-md bg-blue-600 px-6 py-2 text-white hover:bg-blue-700"
+            >
               <span className="font-semibold">Naručite</span>
-            </button>
+            </a>
           </div>
         </div>
       )}

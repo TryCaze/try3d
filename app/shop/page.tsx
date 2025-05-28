@@ -5,13 +5,17 @@ import { Metadata } from "next";
 import Hero from "./components/hero";
 
 export const metadata: Metadata = {
-  title: "Shop | My Awesome Store",
+  title:
+    "Online Trgovina - Vaša omiljena destinacija za kupovinu personaliziranih dekoracija.",
   description:
-    "Browse our amazing collection of products. Find the best deals on quality items.",
-  keywords: "shop, products, buy, online store, ecommerce",
+    "Otkrijte našu kolekciju proizvoda i pronađite savršene dekoracije za svoj dom.",
+  keywords:
+    "trgovina, dekoracije, proizvodi, online kupovina, 3D printanje, igračke, pokloni, svjetleće igračke",
   openGraph: {
-    title: "Our Product Collection",
-    description: "Browse our amazing collection of products",
+    title:
+      "Online Trgovina - Vaša omiljena destinacija za kupovinu dekoracija za vaš dom.",
+    description:
+      "Otkrijte našu kolekciju proizvoda i pronađite savršene dekoracije za svoj dom.",
     type: "website",
   },
 };
@@ -21,7 +25,7 @@ export default function ShopPage() {
     <div className="container mx-auto bg-slate-900 px-4 py-8">
       <Hero />
       <div className="mb-8">
-        <h2 className="mb-4 text-2xl font-semibold text-white">Categories</h2>
+        <h2 className="mb-4 text-2xl font-semibold text-white">Kategorije</h2>
         <div className="flex flex-wrap gap-2">
           {categories.map((category) => (
             <a

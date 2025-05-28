@@ -1,16 +1,36 @@
 "use client";
 
 import { useCart } from "@/context/CartContext";
-import { Product } from "@/data/products";
+import { Product, ProductVariant } from "@/data/products";
 import { motion } from "framer-motion";
 import { ShoppingCartIcon } from "lucide-react";
 
-export default function AddToCartButton({ product }: { product: Product }) {
+export default function AddToCartButton({
+  product,
+  variant,
+}: {
+  product: Product;
+  variant?: ProductVariant;
+}) {
   const { addToCart } = useCart();
+
+  const handleAdd = () => {
+    const cartItem = {
+      id: product.id + (variant ? `-${variant.id}` : ""),
+      name: variant ? `${product.name} – ${variant.name}` : product.name,
+      price: variant ? variant.price : product.price,
+      image: variant ? variant.image : product.image,
+      description: product.description,
+      descriptioncard: product.descriptioncard,
+      category: product.category,
+    };
+
+    addToCart(cartItem);
+  };
 
   return (
     <motion.button
-      onClick={() => addToCart(product)}
+      onClick={handleAdd}
       className="rounded-md bg-blue-600 px-6 py-3 text-white transition-colors hover:bg-blue-700"
       whileHover={{ scale: 1.05 }}
       whileTap={{ scale: 0.95 }}

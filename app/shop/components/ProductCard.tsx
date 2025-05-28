@@ -18,7 +18,9 @@ export default function ProductCard({ product }: { product: Product }) {
         </div>
         <div className="p-4">
           <h3 className="text-lg font-semibold text-white">{product.name}</h3>
-          <p className="mt-1 text-sm text-gray-400">{product.description}</p>
+          <p className="mt-1 text-sm text-gray-400">
+            {product.descriptioncard}
+          </p>
           <p className="mt-2 font-bold text-white">
             €{product.price.toFixed(2)}
           </p>

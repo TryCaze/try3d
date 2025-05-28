@@ -1,8 +1,8 @@
+import Hero from "./components/hero";
 import CTA from "./components/cta";
 import Features from "./components/features";
-import Gallery from "./components/gallery";
-import Hero from "./components/hero";
 import Work from "./components/work";
+import Gallery from "./components/gallery";
 
 const Commisions = () => {
   return (
@@ -10,6 +10,7 @@ const Commisions = () => {
       <Hero />
       <Features />
       <Work />
+      <Gallery />
       <CTA />
     </>
   );

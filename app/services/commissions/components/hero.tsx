@@ -1,52 +1,63 @@
-import { MailCheckIcon, ShoppingCartIcon } from "lucide-react";
-import Image from "next/image";
+"use client";
 
-const Hero = () => {
+import { useEffect, useState } from "react";
+import Image from "next/image";
+import { FaSearch } from "react-icons/fa";
+
+const images = [
+  "/images/hero/hero1.jpg",
+  "/images/hero/hero2.jpg",
+  "/images/hero/hero3.jpg",
+];
+
+export default function Hero() {
+  const [currentImage, setCurrentImage] = useState(0);
+
+  useEffect(() => {
+    const interval = setInterval(() => {
+      setCurrentImage((prev) => (prev + 1) % images.length);
+    }, 5000);
+
+    return () => clearInterval(interval);
+  }, []);
+
   return (
-    <section className="body-font bg-gray-900 text-gray-400">
-      <div className="container mx-auto flex flex-col items-center px-5 py-24 md:flex-row">
-        <div className="mb-10 w-5/6 md:mb-0 md:w-1/2 lg:w-full lg:max-w-lg">
-          <Image
-            width={720}
-            height={600}
-            className="rounded object-cover object-center"
-            alt="hero"
-            src="/posters/Proljetni.png"
-          />
-        </div>
-        <div className="flex flex-col items-center text-center md:w-1/2 md:items-start md:pl-16 md:text-left lg:grow lg:pl-24">
-          <h1 className="title-font mb-4 text-3xl font-medium text-white sm:text-4xl">
-            Novi popusti
-            <br className="hidden lg:inline-block" />
-            na sve narudžbe.
+    <div className="relative h-screen w-full overflow-hidden">
+      <Image
+        src={images[currentImage]}
+        alt="Background"
+        fill
+        className="object-contain transition-opacity duration-1000 ease-in-out"
+        priority
+      />
+      <div className="absolute inset-0 flex items-center justify-center bg-black/60">
+        <div className="max-w-3xl px-4 text-center text-white">
+          <h1 className="text-5xl font-bold">
+            3D posao određen <br />
+            <span className="text-7xl font-bold">ispravno</span>
           </h1>
-          <p className="mb-8 text-lg leading-relaxed">
-            Neka Vam ovo proljeće bude posebno uz persionalizirane dekoracije za
+          <p className="mt-4 text-xl">
+            Potreban ispis 3D modela? <br />
+            Naručite svoj 3D model i dobijte ga u najkraćem mogućem roku.
             <br />
-            Vaš dom uz nove popuste, sve narudžbe koje naručite imaju sniženu
-            <br />
-            cijenu kako bi ste imali spreman dom pun proljetnih dekoracija.
+            <span className="font-semibold">Brzo, lako i povoljno.</span>
           </p>
-          <div className="my-10 flex justify-center">
+          <div className="mt-6 flex flex-col items-center gap-4 sm:flex-row sm:justify-center">
             <a
-              href="/shop"
-              className="relative inline-flex items-center gap-2 rounded-lg border-0 bg-purple-500 px-6 py-2 text-lg text-white shadow-lg transition-all duration-300 hover:scale-105 hover:bg-purple-700 focus:outline-none"
+              href="/form"
+              className="rounded-lg bg-blue-600 px-6 py-3 text-xl font-semibold text-white shadow-md transition-transform duration-300 hover:scale-105 hover:bg-blue-700"
             >
-              Naručite sada
-              <MailCheckIcon className="transition-transform duration-300 ease-in-out group-hover:translate-y-[-3px]" />
+              Naručite svoj 3D model
             </a>
             <a
-              href="mailto:trycaze@proton.me"
-              className="group relative ml-4 inline-flex items-center gap-2 rounded-lg border-0 bg-gray-800 px-6 py-2 text-lg text-gray-400 shadow-lg transition-all duration-300 hover:scale-105 hover:bg-gray-700 hover:text-white focus:outline-none"
+              href="/shop"
+              className="rounded-lg border-2 border-blue-600 px-6 py-3 text-xl font-semibold text-blue-600 shadow-md transition-transform duration-300 hover:scale-105 hover:bg-blue-600 hover:text-white"
             >
-              Istražite ponude
-              <ShoppingCartIcon className="transition-transform duration-300 ease-in-out group-hover:rotate-45" />
+              Posjetite naš web shop
             </a>
           </div>
         </div>
       </div>
-    </section>
+    </div>
   );
-};
-
-export default Hero;
+}

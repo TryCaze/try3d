@@ -1,17 +1,19 @@
-// context/CartContext.tsx (updated)
 "use client";
 
 import { createContext, useContext, useState, useEffect } from "react";
-import { Product } from "@/data/products";
 
-interface CartItem extends Product {
+interface CartItem {
+  id: string;
+  name: string;
+  price: number;
+  image: string;
   quantity: number;
   addedAt: number;
 }
 
 interface CartContextType {
   cart: CartItem[];
-  addToCart: (product: Product) => void;
+  addToCart: (item: Omit<CartItem, "quantity" | "addedAt">) => void;
   removeFromCart: (productId: string) => void;
   clearCart: () => void;
   totalItems: number;
@@ -73,16 +75,16 @@ export function CartProvider({ children }: { children: React.ReactNode }) {
     return () => window.removeEventListener("storage", handleStorage);
   }, [cart, hasHydrated]);
 
-  const addToCart = (product: Product) => {
+  const addToCart = (item: Omit<CartItem, "quantity" | "addedAt">) => {
     setCart((prev) => {
-      const existing = prev.find((item) => item.id === product.id);
+      const existing = prev.find((i) => i.id === item.id);
       return existing
-        ? prev.map((item) =>
-            item.id === product.id
-              ? { ...item, quantity: item.quantity + 1, addedAt: Date.now() }
-              : item,
+        ? prev.map((i) =>
+            i.id === item.id
+              ? { ...i, quantity: i.quantity + 1, addedAt: Date.now() }
+              : i,
           )
-        : [...prev, { ...product, quantity: 1, addedAt: Date.now() }];
+        : [...prev, { ...item, quantity: 1, addedAt: Date.now() }];
     });
   };
 
